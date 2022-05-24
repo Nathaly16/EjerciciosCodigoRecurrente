@@ -1,0 +1,18 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Escalera is
+    Port ( a, b : in  STD_LOGIC;
+           c : out  STD_LOGIC);
+end Escalera;
+
+architecture Behavioral of Escalera is
+
+begin
+		U0: and2 port map (a, not b, x(0));
+		U1: and2 port map (a, not b, x(1));
+		U3: or2 port map (x(0), x(1), c);
+		
+end Behavioral;
+
