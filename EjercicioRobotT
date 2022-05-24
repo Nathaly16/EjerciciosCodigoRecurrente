@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity robot is
+    Port ( S1, S2, S3, S4 : in  STD_LOGIC;
+           T : out  STD_LOGIC);
+end robot;
+
+architecture tarima of robot is
+
+begin
+
+T <= 1 if (S1, S2, S3, S4 = '1');
+else T<= 0;
+
+end tarima;
