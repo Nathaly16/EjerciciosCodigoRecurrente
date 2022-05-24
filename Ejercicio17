@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Ejercicio17 is
+    Port ( a, b : in  STD_LOGIC_VECTOR (0 downto 3);
+           F : out  STD_LOGIC);
+end Ejercicio17;
+
+architecture flujodatos of Ejercicio17 is
+
+begin
+
+F <= '1' when ((a0) or (b0)) and  ((a1) or (b1)) and ((a2) or (b2)) and ((a3) or (b3));
+
+end flujodatos;
+
