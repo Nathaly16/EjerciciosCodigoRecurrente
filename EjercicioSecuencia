@@ -1,0 +1,17 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity Secuencia is
+    Port ( C1, RESET : in  STD_LOGIC;
+           Fa, Fb, Fc : out  STD_LOGIC;
+           Z0 : inout  STD_LOGIC);
+end Secuencia;
+
+architecture Behavioral of Secuencia is
+
+begin
+
+
+end Behavioral;
