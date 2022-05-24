@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Multiplexor is
+    Port ( E : in  STD_LOGIC_VECTOR (0 to 3);
+           S : in  STD_LOGIC_VECTOR (0 to 1);
+           F : out  STD_LOGIC);
+end Multiplexor;
+
+architecture Behavioral of Multiplexor is
+
+begin
+
+
+end Behavioral;
+
