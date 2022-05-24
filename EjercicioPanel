@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity panel is
+    Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           c,d,e : out  STD_LOGIC);
+end panel;
+
+architecture arqPanel of panel is
+
+begin
+	
+	c <= '1' when (a and b = '0');
+	d and e <= 1 when (a and b = '1');
+
+
+end arqPanel;
+
