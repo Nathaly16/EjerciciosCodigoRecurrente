@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.compuerta.all;
+
+entity motor is
+    Port ( a,b,c : in  STD_LOGIC;
+           y : out  STD_LOGIC);
+end motor;
+
+architecture estructura of motor is
+signal x: std_logic_vector(0 to 2);
+begin
+	U0: and 2 port map (a, not b, x(0));
+	U1: and2 port map (not b, c, x(1));
+	U2: and2 port map (a, c, x(2));
+	U3: or3 port map (x(0), x(1), x(2), y);
+
+end estructura;
