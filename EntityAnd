@@ -1,0 +1,14 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity compuAnd is
+    Port ( A, B : in  STD_LOGIC;
+           C : out  STD_LOGIC);
+end compuAnd;
+
+architecture Behavioral of compuAnd is
+
+begin
+
+
+end Behavioral;
