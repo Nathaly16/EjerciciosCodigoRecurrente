@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Promedio1 is
+    Port ( A, B : in  STD_LOGIC_VECTOR (2 downto 0);
+           C : out  STD_LOGIC_VECTOR (2 downto 0));
+end Promedio1;
+
+architecture Behavioral of Promedio1 is
+
+begin
+
+
+end Behavioral;
+
