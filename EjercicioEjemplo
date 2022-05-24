@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity ejemplo is
+    Port ( e, s : in  STD_LOGIC_VECTOR (0 downto 3);
+           F : out  STD_LOGIC);
+end ejemplo;
+
+architecture Behavioral of ejemplo is
+
+begin
+
+
+end Behavioral;
+
