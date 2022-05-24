@@ -1,0 +1,20 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.gates.all;
+
+entity Figura1 is
+    Port ( a, b : in  STD_LOGIC_vector(0 to 3);
+           F : out  STD_LOGIC);
+end Figura1;
+
+architecture arq_estructurall of Figura1 is
+signal x: std_logic_vector(0 to 3);
+begin
+	U0; or2 port map (a(0), b(0), x(0));
+	U1; or2 port map (a(1), b(1), x(1));
+	U2; or2 port map (a(2), b(2), x(2));
+	U3; and3 port map (a(0), b(1), x(2), x(3), F);
+
+end arq_estructurall;
+
