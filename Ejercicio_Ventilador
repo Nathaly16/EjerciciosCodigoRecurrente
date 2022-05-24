@@ -1,0 +1,21 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity ventilador is
+    Port ( a, b : in  STD_LOGIC;
+           e : out  STD_LOGIC);
+end ventilador;
+
+architecture motor of ventilador is
+
+begin
+
+	rotar: process(a, b, e)
+begin
+	if (a = '1' b = '0') then e <= 'der';
+		else is ( a = '0' and b = '1') then d<= 'izq';
+	end if;
+	end process;
+
+end motor;
