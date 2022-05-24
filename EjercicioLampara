@@ -1,0 +1,21 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity lampara is
+    Port ( a : in  STD_LOGIC;
+           b : out  STD_LOGIC);
+end lampara;
+
+architecture arq_lampara of lampara is
+
+begin
+
+morse: process(a,b) begin
+	if a  '1' then b <= '1';
+	else b <= '0';
+	
+	end if;
+	end process morse;
+	
+end arq_lampara;
